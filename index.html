@@ -161,16 +161,7 @@
         </p> -->
 
         <div class="content has-text-justified">
-          <p>
-            Cross-domain few-annotation object detection (CFOD) aims to transfer a detector trained on the source domain to the target domain with less annotated data, which is a common problem that needs to be solved urgently in the industrial fields. The main challenge lies in that it is difficult to maintain the performance of the source domain when the target domain data is severely under-annotated and its environment is very different from the source domain. Current methods primarily concentrate on utilizing the limited labeled target data to address the data imbalance and feature unalignment between the source and target domains. However, their gains are constrained as the limited labeled target data cannot represent the entire target domain. Moreover, they fail to consider the valuable prior information present in the extensive unlabeled target data.
-              </p>
-              <p>
-              In this paper, we propose a novel <b> memory storage-to-adaptation (MS2A) mechanism </b> to effectively mine prior knowledge and transfer the prior knowledge to both domains adaptively. 
-              Specifically, our approach involves two key components. On the one hand, we introduce a memory storage module, which comprehensively captures the prior knowledge from both source and unlabeled target data. We refine the prior knowledge and store it as the memory for later domain adaptation. On the other hand, we present an efficient memory adaptation module that integrates the memory into the feature alignment of target domain data, resulting in more discriminative features and improving the detection performance significantly.
-              </p>
-              <p>
-                To evaluate the effectiveness of our proposed method, we have collected a more challenging dataset in industrial scenes. Our method is assessed on both the constructed dataset and publicly available datasets and the experimental results demonstrate that we achieve new <b> state-of-the-art </b> performances on both sets of datasets. In particular, MS2A exceeds the state of the art by 10.4% on the challenging industrial dataset for the 10-annotation setting.
-              </p>
+            Cross-domain few-annotation object detection (CFOD) aims to transfer a detector trained on a source domain to a target domain with minimal annotations, a critical challenge in industrial applications. This paper proposes a novel <b> memory storage-to-adaptation (MS2A) </b> mechanism to address the challenge. Unlike prior methods that focus on data imbalance and feature misalignment with limited labeled data, MS2A mines prior knowledge from abundant unlabeled data that is more representative of the entire target domain. Specifically, MS2A involves memory storage and memory adaptation modules: the former captures the prior knowledge and stores it as memory information, while the latter efficiently integrates the memory into the feature alignment, yielding more discriminative features and significant improvement. We have collected a more challenging dataset in industrial scenes and evaluated MS2A on the constructed and public datasets. MS2A achieves new <b> state-of-the-art </b> results, outperforming previous methods by 10.4\% on the industrial dataset for the 10-annotation setting.
         </div>
       </div>
     </div>
